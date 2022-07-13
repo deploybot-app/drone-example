@@ -1,0 +1,25 @@
+kind: pipeline
+type: kubernetes
+name: golang-image
+trigger:
+  event:
+    - push
+steps:
+  - name: build
+    image: docker.io/golang:1.18.3-alpine3.15
+    commands:
+    - go version
+    - go test ./...
+
+---
+kind: pipeline
+type: kubernetes
+name: deploy
+trigger:
+  event:
+    - promote
+steps:
+  - name: plan
+    image: docker.io/hashicorp/terraform:1.2.2
+    commands:
+      - echo "Deploying $DRONE_REPO_NAME at $DRONE_COMMIT_SHA to $DRONE_DEPLOY_TO"
