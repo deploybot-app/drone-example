@@ -1,4 +1,4 @@
-# Deploybot Drone Example [![Twitter](https://img.shields.io/badge/Twitter-news-1da1f2?logo=twitter)](https://twitter.com/deploybotapp) [![Deploy](https://img.shields.io/github/deployments/deploybot-app/drone-example/development?label=deploy&logo=github)](https://github.com/deploybot-app/drone-example/deployments)
+# drone-example [![Twitter](https://img.shields.io/badge/follow-news-1da1f2?logo=twitter)](https://twitter.com/deploybotapp) [![Deploy](https://img.shields.io/github/deployments/deploybot-app/drone-example/development?label=deploy&logo=github)](https://github.com/deploybot-app/drone-example/deployments)
 
 `drone-example` shows how to use [Deploybot](https://deploybot.app) with Drone.
 
